@@ -95,3 +95,107 @@ news
       position: relative;
     }
   }
+
+  /* WC7 form */
+form h1 {
+    background: rgba(0, 0, 0, 0.3);
+    padding: 1em;
+    margin-bottom: 1em;
+    text-align: center;
+    box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+  }
+  
+  /* CF 7 override */
+  form.wpcf7-form {
+    background: #fff;
+    margin-left: auto;
+  }
+  
+  form.wpcf7-form * {
+    transition: all 100ms;
+  }
+  
+  form.wpcf7-form label {
+    display: block;
+    width: 100%;
+    cursor: pointer;
+  }
+  
+  form.wpcf7-form input,
+  form.wpcf7-form select,
+  form.wpcf7-form textarea {
+    display: block;
+    width: 100%;
+    padding: 0.5em;
+    border: 1px solid black;
+    border-bottom: 1px solid #000;
+    background: transparent;
+    font-size: 1em;
+  }
+  
+  form.wpcf7-form input[type=submit] {
+    padding: 1em;
+    margin-bottom: 0;
+    text-transform: uppercase;
+    border: 1px solid rgb(0, 0, 0);
+    box-shadow: none;
+    color: #000;
+    line-height: 1.2em;
+    display: inline-block;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin-right: 1em;
+    cursor: pointer;
+  }
+  
+  form.wpcf7-form input[type=submit]:hover {
+    background-color: #000;
+    color: white;
+  }
+  
+  form span.wpcf7-not-valid-tip {
+    position: relative;
+    color: #e87676;
+  }
+  
+  div.wpcf7-response-output {
+    padding: 1em !important;
+    margin: 0 !important;
+  }
+  
+  form.wpcf7-form label {
+    font-family: var(--wp--preset--font-family--work-sans);
+    color: #000;
+  }
+  
+  form.wpcf7-form p {
+    margin-top: 0;
+  }
+  
+  div.wpcf7 .ajax-loader {
+    display: none;
+    background: none;
+    animation: spin 1s cubic-bezier(0.36, 0.09, 0.27, 0.97) infinite;
+    border: 3px solid #dedede;
+    border-top: 3px solid #000000;
+    border-radius: 50%;
+    height: 1em;
+    width: 1em;
+    margin: 0;
+    vertical-align: middle;
+  }
+  
+  .wpcf7-form-control.g-recaptcha.wpcf7-recaptcha {
+    opacity: 0.75;
+  }
+  
+  .doubleform p {
+    min-width: 45%;
+  }
+  
+  .doubleform {
+    display: flex;
+    justify-content: space-between;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
