@@ -140,7 +140,7 @@ form h1 {
     width: 100%;
     padding: 0.5em 0;
     border: unset;
-    border-bottom: 1px solid var(--wp--preset--color--base) !important;;
+    border-bottom: 1px solid var(--wp--preset--color--base) !important;
     background: transparent;
     font-size: 1em;
   }
@@ -209,3 +209,11 @@ form h1 {
     -moz-column-gap: 20px;
          column-gap: 10px;
   }
+
+  input, select, textarea{
+    color: var(--wp--preset--color--base) !important;
+}
+
+textarea:focus, input:focus {
+    color: var(--wp--preset--color--base) !important;
+}
