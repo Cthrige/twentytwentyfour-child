@@ -44,23 +44,7 @@ news
 .wp-block-navigation-item__label {
     white-space: nowrap;
   }
-  
-  .back_to_top {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    aspect-ratio: 1/1;
-    height: 3em;
-    background: #2b383c;
-    border-radius: 50%;
-    cursor: pointer;
-  }
-  .back_to_top svg {
-    fill: #f3f1f0;
-  }
+ 
   
   input.wpcf7-form-control.has-spinner.wpcf7-submit {
     min-width: 100px;
@@ -96,6 +80,10 @@ news
     }
   }
 
+  :focus-visible {
+    outline: none;
+}
+
   /* WC7 form */
 form h1 {
     background: rgba(0, 0, 0, 0.3);
@@ -104,10 +92,19 @@ form h1 {
     text-align: center;
     box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
   }
+
+  textarea, input {
+    border: none;
+    overflow: auto;
+    outline: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    resize: none; /*remove the resize handle on the bottom right*/
+}
   
   /* CF 7 override */
   form.wpcf7-form {
-    background: #fff;
     margin-left: auto;
   }
   
@@ -126,8 +123,8 @@ form h1 {
   form.wpcf7-form textarea {
     display: block;
     width: 100%;
-    padding: 0.5em;
-    border: 1px solid black;
+    padding: 0.5em 0;
+    border: unset;
     border-bottom: 1px solid #000;
     background: transparent;
     font-size: 1em;
