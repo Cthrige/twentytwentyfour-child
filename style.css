@@ -41,11 +41,23 @@ news
 * Theme specific CSS
 */
 
+/* Common added classes, hides, margins, padings */
+@media screen and (max-width: 990px) {
+  .mobile-hidden {
+    display: none;
+  }
+}
+@media screen and (min-width: 990px) {
+  .desktop-hidden {
+    display: none;
+  }
+}
+/* Common added classes end */
+
 .wp-block-navigation-item__label {
     white-space: nowrap;
   }
  
-  
   input.wpcf7-form-control.has-spinner.wpcf7-submit {
     min-width: 100px;
     min-height: 38px;
@@ -54,7 +66,7 @@ news
     color: #f3f1f0;
   }
   
-  @media screen and (min-width: 990px) {
+  /* @media screen and (min-width: 990px) {
     p:has(.back_to_top) {
       position: relative;
     }
@@ -78,7 +90,7 @@ news
     .footer:has(.back_to_top) {
       position: relative;
     }
-  }
+  } */
 
   :focus-visible {
     outline: none;
