@@ -49,10 +49,10 @@ news
   .mobile-flex-direction-reverse {
     flex-direction: column-reverse;
   }
-  .mobile-wrap {
+  .mobile-wrap.wrap {
     flex-wrap: wrap!important;
   }
-  .mobile-nowrap {
+  .mobile-nowrap.nowrap {
     flex-wrap: nowrap!important;
   }
 }
