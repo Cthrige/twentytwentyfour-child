@@ -61,6 +61,10 @@ news
     display: none;
   }
 }
+
+.text-underline {
+  text-decoration: underline!important;
+}
 /* Common added classes end */
 
 .wp-block-navigation-item__label {
